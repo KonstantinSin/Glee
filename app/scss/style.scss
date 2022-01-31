@@ -79,8 +79,92 @@
         margin-right: 25px;
         padding: 18px 18px;
     }
+}
+.footer{
+
+}
+.footer-top{
+    display: flex;
+    padding: 85px 0 75px;
+    border-bottom: 1px solid #dae4e9;
+    &__logo{
+        margin-bottom: 15px;
+        display: block;
+    }
+    &__contact{
+        width: 193px;
+        margin-right: 118px;
+    }
+    &__services{
+        width: 127px;
+        margin-right: 155px;
+    }
+    &__account{
+        width: 88px;
+        margin-right: 190px;
+    }
     
+    &__subscription{
+        max-width: 283px;
     
+    }
+    &__title{
+        font-size: 16px;
+        line-height: 21px;
+        color: #1f2044;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    &__link,
+    &__text{
+        @extend %rubik-400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $linkcolor;
+        display: block;
+        margin-bottom: 10px;
+    }
+    &__form{
+        margin-top: 30px;
+    }
+    &__form-input{
+        background-color: #fef7f0;
+        max-width: 170px;
+        width: 100%;
+        border: none;
+        padding: 15px;
+        &::placeholder{
+            @extend %dmsans-400;
+            color: #234969;
+            font-size: 12px;
+        }
+    }
+    &__form-btn{
+        border: none;
+        background-color: #a3bbc8;
+        color: #fff;
+        padding: 15px 17px;
+        cursor: pointer
+    }
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    &__copy,
+    &__links-link{
+        @extend %rubik-400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $linkcolor;
+    }
+    &__links-link:not(:last-child){
+        border-right: 1px solid $linkcolor;
+        margin-right: 15px;
+        padding-right: 15px;
+    }
+
 }
 @import 'media';
 
