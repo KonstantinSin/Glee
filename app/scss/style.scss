@@ -1,11 +1,292 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
-
-
-
+.header{
+    padding: 50px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.menu{
+    &__list{
+        display: flex;
+    }
+    &__list-item + .menu__list-item{
+        padding-left: 35px;
+    }
+    &__list-link{
+        @extend %rubik-500;
+        color: #436372;
+     }
+}
+.user-nav{
+    display: flex;
+    &__link{
+        position: relative;
+    }
+    &__link +.user-nav__link{
+        margin-left: 60px;
+    }
+    &__num{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        top: -9px;
+        right: -14px;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+    &__link--search{
+        background-color: #edf1f4;
+        width: 50px;
+        height: 50px; 
+        border-radius: 50%;
+        margin-right: 20px;
+        padding: 18px 18px;
+    }
+    &__link-box{
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        background-color: #fcd7b6;
+        border-radius: 25px;
+        padding: 13px 40px
+    }
+    &__link-box::after{
+        content: "";
+        border-right: 1px solid;
+        color: #fde7d3;
+        position: absolute;
+        top: 6px;
+        right: 84px;
+        height: 26px;
+        width: 1px;
+    }
+    &__link--ellips{
+        background-color: #a3bbc8;
+        width: 50px;
+        height: 50px; 
+        border-radius: 50%;
+        padding: 18px 18px;
+    }
+}
+.footer-top{
+    display: flex;
+    padding: 85px 0 75px;
+    border-bottom: 1px solid #dae4e9;
+    &__logo{
+        margin-bottom: 15px;
+        display: block;
+    }
+    &__contact{
+        width: 193px;
+        margin-right: 118px;
+    }
+    &__services{
+        width: 127px;
+        margin-right: 155px;
+    }
+    &__account{
+        width: 88px;
+        margin-right: 190px;
+    }
+    
+    &__subscription{
+        max-width: 283px;
+    }
+    &__title{
+        font-size: 16px;
+        line-height: 21px;
+        color: #1f2044;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+    &__link,
+    &__text{
+        @extend %rubik-400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $linkcolor;
+        display: block;
+        margin-bottom: 10px;
+    }
+    &__form{
+        margin-top: 30px;
+    }
+    &__form-input{
+        background-color: #fef7f0;
+        max-width: 170px;
+        width: 100%;
+        border: none;
+        padding: 15px;
+        &::placeholder{
+            @extend %dmsans-400;
+            color: #234969;
+            font-size: 12px;
+        }
+    }
+    &__form-btn{
+        border: none;
+        background-color: #a3bbc8;
+        color: #fff;
+        padding: 15px 17px;
+        cursor: pointer
+    }
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    &__copy,
+    &__links-link{
+        @extend %rubik-400;
+        font-size: 14px;
+        line-height: 24px;
+        color: $linkcolor;
+    }
+    &__links-link:not(:last-child){
+        border-right: 1px solid $linkcolor;
+        margin-right: 15px;
+        padding-right: 15px;
+    }
+}
+.top-slider{
+    background-color: #fcd7b6;
+    &__container{
+        max-width: 1350px;
+    }
+    &__item{
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 70px;
+    }
+    &__content{
+        padding-top: 215px;
+        padding-bottom: 200px;
+        max-width: 415px;
+    }
+    &__title{
+        @extend %rubik-400;
+        font-size: 72px;
+        line-height: 70px;
+        color: #243f4d;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    &__text{
+        @extend %rubik-400;
+        font-size: 18px;
+        line-height: 30px;
+        color: #243f4d;
+        margin-bottom: 40px;
+    }
+    &__link{
+        color: #fff;
+        background-color: #a3bbc8;
+        padding: 20px 17px 20px 26px;
+        font-size: 15px;
+        line-height: 12px;
+    }
+    &__link-icon img{
+        display: inline-block;
+        padding-left: 55px;
+    }
+    &__image{
+        margin-top: 120px;
+    }
+    &__bottom{
+        display: flex;
+        justify-content: space-around;
+        background-color: #fef7f0;
+    }
+    &__bottom-item{
+        padding: 40px 140px;
+    }
+    &__bottom-item:not(:last-child){
+        border-right: 1px solid #e8e4df;
+    }
+    &__bottom-title{
+        @extend %dmsans-700;
+        font-size: 18px;
+        line-height: 40px;
+    }
+    &__bottom-text{
+        max-width: 208px;
+        @extend %dmsans-400;
+        color: #585858;
+        font-size: 16px;
+    }
+    &__bottom-item--payment,
+    &__bottom-item--delivery,
+    &__bottom-item--support{
+        position: relative;
+    }
+    &__bottom-item--support::before{
+        content: "";
+        position: absolute;
+        background-image: url('../images/support.png');
+        background-repeat: no-repeat;
+        margin-left: -70px;
+        margin-top: 10px;
+        width: 55px;
+        height: 50px;
+    }
+    &__bottom-item--delivery::before{
+        content: "";
+        position: absolute;
+        background-image: url('../images/delivery-truck.png');
+        background-repeat: no-repeat;
+        margin-left: -70px;
+        margin-top: 10px;
+        width: 55px;
+        height: 50px;
+    }
+    &__bottom-item--payment::before{
+        content: "";
+        position: absolute;
+        background-image: url('../images/credit-card.png');
+        background-repeat: no-repeat;
+        margin-left: -70px;
+        margin-top: 10px;
+        width: 55px;
+        height: 50px;
+    }
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 42px;
+    li{
+        padding: 0 8px;
+        line-height: 0;
+    }
+    button{
+        padding: 0;
+        font-size: 11px;
+        background-color: #fde3cc;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid transparent;
+        cursor: pointer;
+    }
+}   
+.slick-active{
+        button{
+            background-color: #fff;
+        }
+}
 @import 'media';
 
 
