@@ -21,3 +21,9 @@ $linkcolor: #7b7b7b;
     font-family: 'DMsans-Regular', sans-serif;
     font-weight: 400;
 }
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
