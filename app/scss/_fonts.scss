@@ -44,3 +44,12 @@
         url(../fonts/DMSans-Regular.woff) format('woff');
     font-display: swap;
 }
+@font-face{
+    font-family: 'Myriadpro-regular.';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Myriadpro-regular.'),
+        url(../fonts/myriadpro-regular.woff2) format('woff2'),
+        url(../fonts/myriadpro-regular.woff) format('woff');
+    font-display: swap;
+}
