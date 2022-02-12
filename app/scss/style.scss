@@ -803,6 +803,44 @@
         padding-left: 7px;
     }
 }
+.conditions{
+    padding: 110px 0;
+    &__title{
+        @extend %rubik-500;
+        font-size: 24px;
+        line-height: 40px;
+        color: $default;
+        margin-bottom: 25px;
+    }
+    &__list{
+        padding-left: 0;
+        counter-reset: my-counter;
+    }
+    &__list-item{
+      
+        @extend %rubik-400;
+        line-height: 30px;
+        color: $default;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    &__list-item{
+        counter-increment: my-counter;
+        display: flex;
+    }
+    &__list-item:before{
+        content: '0' counter(my-counter) '.';
+        padding-right: 10px;
+        
+    }
+    &__text{
+        @extend %rubik-400;
+        line-height: 30px;
+        color: $default;
+        font-size: 16px;
+        margin-bottom: 65px;
+    }
+}
 @import 'media';
 
 
