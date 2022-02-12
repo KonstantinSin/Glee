@@ -1,5 +1,5 @@
 $linkcolor: #7b7b7b;
-
+$default: #243f4d;
 
 %rubik-400{
     font-family: 'Rubik-Regular', sans-serif;
@@ -24,6 +24,10 @@ $linkcolor: #7b7b7b;
 %myriadpro-400{
     font-family: 'Myriadpro-Regular', sans-serif;
     font-weight: 400;
+}
+%rubik-700{
+    font-family: 'Rubik-Bold', sans-serif;
+    font-weight: 700;
 }
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});

@@ -104,7 +104,6 @@
         max-width: 283px;
     }
     &__title{
-        font-size: 16px;
         line-height: 21px;
         color: #1f2044;
         text-transform: uppercase;
@@ -180,7 +179,7 @@
         @extend %rubik-400;
         font-size: 72px;
         line-height: 70px;
-        color: #243f4d;
+        color: $default;
         text-transform: uppercase;
         margin-bottom: 30px;
     }
@@ -188,7 +187,7 @@
         @extend %rubik-400;
         font-size: 18px;
         line-height: 30px;
-        color: #243f4d;
+        color: $default;
         margin-bottom: 40px;
     }
     &__link{
@@ -225,7 +224,6 @@
         max-width: 208px;
         @extend %dmsans-400;
         color: #585858;
-        font-size: 16px;
     }
     &__bottom-item--payment,
     &__bottom-item--delivery,
@@ -324,13 +322,11 @@
     }
     &__title{
         @extend %dmsans-500;
-        font-size: 16px;
         line-height: 40px;
-        color: #243f4d;
+        color: $default;
     }
     &__price{
         @extend %dmsans-700;
-        font-size: 16px;
         line-height: 40px;
         color: #a3bbc8;
     }
@@ -384,14 +380,13 @@
         @extend %dmsans-700;
         font-size: 26px;
         line-height: 32px;
-        color: #243f4d;
+        color: $default;
         margin-bottom: 23px;
     }
     &__item-descr{
         @extend %rubik-400;
-        font-size: 16px;
         line-height: 30px;
-        color: #243f4d;
+        color: $default;
         margin-bottom: 23px;
     }
     &__item-link{
@@ -434,7 +429,6 @@
     }
     &__item-descr{
         @extend %dmsans-700;
-        font-size: 16px;
         color: #a3bbc8;
     }
     &__item-img{
@@ -476,7 +470,6 @@
     }
     &__link{
         @extend %dmsans-700;
-        font-size: 16px;
         .articles__link svg{
             padding-left: 15px;
         }
@@ -613,11 +606,204 @@
         margin-top: 25px;
         @extend %rubik-500;
         font-size: 18px;
-        color: #243f4d;
+        color: $default;
         background-color: transparent;
         border: 2px solid #a3bbc8;
         padding: 14px 0;
     }
 }
+.mission{
+    margin: 115px 0;
+    &__wrapper{
+    background-image: url("../images/mission-img.jpg");
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position: top left;
+    }
+    &__content{
+        max-width: 580px;
+        margin-left: auto;
+        padding: 75px 0 80px;
+  
+    }
+    &__subtitle{
+        display: flex;
+        margin-bottom: 47px;
+        max-width: 280px;
+    }
+    &__subtitle-numbers{
+        @extend %rubik-700;
+        font-size: 140px;
+        line-height: 32px;
+        color: #a3bbc8;
+        margin-right: 20px;
+    }
+    &__subtitle-text{
+        @extend %rubik-400;
+        line-height: 30px;
+        color: $default;
+        margin-top: -20px;
+    }
+    &__title{
+        color: $default;
+        text-align-last: left;
+    }
+    &__text{
+        @extend %rubik-400;
+        line-height: 30px;
+        color: $default;
+        border-bottom: 1px solid #e6eaf0;
+        padding-bottom: 60px;
+    }
+    &__achiev-list{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    &__achiev-item{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 20px;
+        &:not(:last-child){
+            border-right: 1px solid #e6eaf0;
+        }
+    }
+    &__achiev-item svg{
+        path{
+        fill: #b5c8d3;
+        }
+    }
+    &__achiev-item-content{
+        display: block;
+        margin-left: 20px;
+    }
+    &__achiev-title{
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 38px;
+        color: $default;
+    }
+    &__achiev-descr{
+        @extend %dmsans-700;
+        line-height: 17px;
+        color: #4c4c4c;
+    }
+}
+.numbers{
+    background-color: #fcd7b6;
+    margin-bottom: 120px;
+    &__wrapper{
+        padding: 80px 0;
+    }
+    &__list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    &__item{
+        max-width: 190px;
+    }
+    &__item-icon{
+        display: block;
+        margin: 0 auto 20px;
+
+    }
+    &__item-title{
+        text-align: center;
+        @extend %dmsans-700;
+        font-size: 36px;
+        line-height: 32px;
+        color: $default;
+        margin-bottom: 20px;
+    }
+    &__item-descr{
+        text-align: center;
+        @extend %dmsans-700;
+        font-size: 18px;
+        line-height: 32px;
+        color: $default;
+    }
+}
+.team{
+    margin-bottom: 150px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between
+    }
+    &__descr{
+        max-width: 315px;
+    }
+    &__title{
+        text-align-last: left;
+        margin-bottom: 32px;
+        color: $default;
+        font-size: 36px;
+        line-height: 32px;
+    }
+    &__text{
+        @extend %rubik-400;
+        line-height: 30px;
+        color: $default;
+        margin-bottom: 35px;
+    }
+    &__link{
+        @extend %myriadpro-400;
+        font-size: 15px;
+        line-height: 55px;
+        color: #fff;
+        background-color:#a3bbc8;
+        border: 1px solid #a3bbc8;
+        border-radius: 5px;
+        padding: 17px 26px 17px 22px;
+    }
+    &__link svg{
+        padding-left: 20px;
+        path{
+            fill: #fff
+        }
+    }
+    &__members{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+        grid-gap: 100px 35px;
+    }
+    &__member{
+       position: relative;
+    }
+    &__member-info{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -50px;
+        background-color: #fff;
+        box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+        max-width: 325px;
+        width: 100%;
+        padding: 30px 15px;
+    }
+    &__member-info-name{
+        @extend %dmsans-700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #436372;
+        margin-bottom: 12px;
+    }
+    &__member-info-position{
+        @extend %rubik-400;
+        line-height: 30px;
+        color: #565872;
+    }
+
+    &__member-info-socials{
+        display: flex;
+    }
+    
+    &__member-info-socials-link{
+        padding-left: 7px;
+    }
+}
 @import 'media';
 
+
+  
