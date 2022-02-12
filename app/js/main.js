@@ -7,3 +7,5 @@ $(function(){
         autoplaySpeed: 2000
     });
 });
+var mixer = mixitup('.week__content');
+var mixer = mixitup('.design__content');

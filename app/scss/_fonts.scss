@@ -18,6 +18,15 @@
 }
 
 @font-face{
+    font-family: 'Rubik-Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Rubik-Bold'),
+        url(../fonts/Rubik-Bold.woff2) format('woff2'),
+        url(../fonts/Rubik-Bold.woff) format('woff');
+    font-display: swap;
+}
+@font-face{
     font-family: 'DMsans-Bold';
     font-weight: 700;
     font-style: normal;
@@ -27,11 +36,29 @@
     font-display: swap;
 }
 @font-face{
+    font-family: 'DMsans-Medium';
+    font-weight: 500;
+    font-style: normal;
+    src: local('DMsans-Medium'),
+        url(../fonts/DMSans-Medium.woff2) format('woff2'),
+        url(../fonts/DMSans-Medium.woff) format('woff');
+    font-display: swap;
+}
+@font-face{
     font-family: 'DMsans-Regular';
     font-weight: 400;
     font-style: normal;
     src: local('DMsans-Regular'),
         url(../fonts/DMSans-Regular.woff2) format('woff2'),
         url(../fonts/DMSans-Regular.woff) format('woff');
+    font-display: swap;
+}
+@font-face{
+    font-family: 'Myriadpro-regular.';
+    font-weight: 400;
+    font-style: normal;
+    src: local('Myriadpro-regular.'),
+        url(../fonts/myriadpro-regular.woff2) format('woff2'),
+        url(../fonts/myriadpro-regular.woff) format('woff');
     font-display: swap;
 }
