@@ -89,3 +89,35 @@ body{
         color: inherit;
     }
 }
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 108px 0 0;
+    .pagination__list{
+        display: flex;
+        padding: 0 15px;
+    }
+    &__item{
+        padding: 0 15px;
+    }
+
+    &__link ,
+    .pagination__next ,
+    .pagination__prev{
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $default;
+        border: 1px solid #a3bbc8;
+        padding: 15px 21px ;
+    }
+    &__link--active{
+        color: #fff;
+        background-color: #a3bbc8;
+    }    
+    .pagination__next{
+        padding: 9px 22px ;
+    }
+
+}
