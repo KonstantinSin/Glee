@@ -1,6 +1,14 @@
 $(function(){
 
 
+  $('.related__inner').slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+   
+});  
+
   $('.detalis-one__item-num').styler();
   $('.detalis-slide__thumb').slick({
     asNavFor: '.detalis-slide__big',
