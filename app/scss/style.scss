@@ -560,6 +560,10 @@
     padding: 80px 0;
     
 }
+.other-pertners{
+    margin-top: 0;
+    padding: 75px 0;
+}
 .modal{
     &__form-wrapper{
          margin: 0 auto 115px;
@@ -1085,12 +1089,11 @@
         }
 
     }
-    &__pagination{
-        justify-content: left;
-    }
+
 
   
 }
+
 .detalis{
     padding: 120px 0 125px;
 }
@@ -1361,5 +1364,132 @@
     top: -100px;
     right: 0;
 }
+.blog-page{
+    padding: 120px 0;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content{
+        margin-right: 70px;
+    }
+    &__content-item{
+        margin-bottom: 50px;
+    }
+    &__content-img{
+        position: relative;
+        display: block;
+        
+        
 
+    }
+    &__content-info{
+        position: absolute;
+        margin-top: -78px;
+        display: flex;
+        background-color: #a3bbc8;
+        padding: 30px;
+        a{
+        @extend %rubik-400;
+        font-size: 12px;
+        line-height: 1;
+        color: #fff;
+        
+        }
+        img{
+            display: inline;
+            margin-right: 7px;
+        }
+    }
+    &__content-info-date{
+        margin-right: 30px;
+    }
+    &__content-title{
+        margin-top: 40px;
+        margin-bottom: 37px;
+        @extend %rubik-400;
+        font-size: 36px;
+        line-height: 26px;
+        color: #333333;
+    }
+    &__content-text{
+        @extend %rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $default;
+        margin-bottom: 40px;
+    }
+    &__content-link{
+        border-color: #a3bbc8;
+        border-radius: 0;
+        color: #a3bbc8;
+    }
+    &__filters{
+        max-width: 268px;
+    }
+    
+    .filter-search{
+        margin-bottom: 57px;
+        &__form{
+            display: flex;
+        }
+        &__input{
+            border: 1px solid #dae4e9;
+            border-radius: 5px;
+            width: 230px;
+            height: 43px;
+            padding: 0 5px 0 15px;
+        }
+        &__btn{
+            border: none;
+            border-radius: 5px;
+            margin-left: -5px;
+            background-color: #edf1f4;
+            height: 43px;
+            width: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer
+        }
+    }
+}
+.recent-posts{
+    &__list{
+        padding-left: 0;
+    }
+    &__item{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    &__img-link{
+        min-width: 70px;
+        height: 70px;
+        margin-right: 20px;
+    }
+    &__img{
+        
+        object-fit: cover
+    }
+    &__descr{
+        margin-top: -4px;
+    }
+    &__title{
+        @extend %rubik-400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #333333;
+    }
+    &__date{
+        @extend %rubik-400;
+        font-size: 12px;
+        line-height: 30px;
+        color: #9a9a9a;
+        display: flex;
+        img{
+            padding-right: 5px;
+            transform: translateY(-2px);
+        }
+    }
+}
 @import 'media';
