@@ -304,10 +304,16 @@
               </h4> 
               <form class="blog-details__form" action="#">
                 <div class="blog-details__box-input">
-                  <input class="blog-details__input-name" type="text" placeholder="Name">
-                  <input class="blog-details__input-mail" type="email" placeholder="Email">
+                  <div class="blog-details__input-name">
+                  <input type="text" placeholder="Name">
                 </div>
-                <textarea class="blog-details__textarea" placeholder="Comment"></textarea>
+                <div class="blog-details__input-mail">
+                  <input type="email" placeholder="Email">
+                </div>
+                </div>
+                <div class="blog-details__textarea">
+                <textarea placeholder="Comment"></textarea>
+                </div>
                 <button class="blog-details__btn" type="submit">
                   POST COMMENT
                 </button>
