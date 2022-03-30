@@ -1731,4 +1731,121 @@
     cursor: pointer;
   }
 }
+.contact{
+  &__inner{
+    padding: 120px 0;
+  }
+  &__top{
+    margin-bottom: 120px;
+  }
+  &__subtitle{
+    text-align: center;
+    @extend %rubik-700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #a3bbc8;
+    margin-bottom: 15px;
+  }
+  &__title{
+    color: #436372;
+    margin-bottom: 70px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0;
+  }
+  &__item{
+    width: 370px;
+    height: 385px;
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    &:hover{
+      border: 1px solid #a3bbc8;
+      .contact__item-icon{
+        background-color: #a3bbc8;
+        svg{
+          path{
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+  &__item-icon{
+    background-color: #fff;
+    border: none;
+    border-radius:20px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    padding: 20px 25px;
+    margin-bottom: 55px;
+    svg{
+      path{
+        fill: #a3bbc8;
+      }
+    }
+
+  }
+  &__item-title{
+    @extend %dmsans-700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #222222;
+    margin-bottom: 20px;
+  }
+  &__item-info{
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #565872;
+    text-align: center;
+    a{
+      color: inherit;
+    }
+  }
+  &__inform{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__inform-form{
+    margin-right: 50px;
+  }
+  &__form{
+
+  }
+  &__input{
+    display: flex;
+    justify-content: space-between;
+    input{
+      width: 300px;
+      height: 50px;
+    }
+  }
+  &__input-name{
+    margin-right: 20px;
+  }
+  &__textarea{
+
+  }
+  &__btn{
+
+  }
+}
+
+.map {
+  
+  width: 500px;
+  min-height: 340px;
+}
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+// // [class*="ground-pane"] {
+// //     filter: grayscale(1);
+// }
 @import "media";
