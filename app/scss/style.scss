@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 .menu {
@@ -71,12 +72,14 @@
     height: 26px;
     width: 1px;
   }
-  &__link--ellips {
+  &__btn {
+    border: none;
     background-color: #a3bbc8;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     padding: 18px 18px;
+    cursor: pointer;
   }
 }
 .footer-top {
@@ -213,7 +216,7 @@
     background-color: #fef7f0;
   }
   &__bottom-item {
-    padding: 40px 140px;
+    padding: 40px 90px;
   }
   &__bottom-item:not(:last-child) {
     border-right: 1px solid #e8e4df;
@@ -335,11 +338,13 @@
   }
   &__links {
     position: absolute;
-    display: none;
-    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    visibility: hidden;
   }
   .week-item:hover &__links {
-    display: block;
+    visibility: visible;
   }
   &__links-search,
   &__links-cart,
@@ -366,7 +371,7 @@
   &__item {
     background-color: #feefe2;
     display: flex;
-    padding-left: 135px;
+    padding-left: 100px;
     padding-bottom: 110px;
   }
   &__item-img {
@@ -438,15 +443,15 @@
   &__item-img {
     margin-left: 100px;
     margin-top: -30px;
-    object-fit: cover;
+    object-fit: contain;
   }
   &__item:nth-child(3) img {
-    margin-left: auto;
+    margin-left: 150px;
     padding-right: 45px;
     margin-top: -80px;
   }
   &__item:nth-child(5) img {
-    margin-left: auto;
+    margin-left: 150px;
     padding-right: 45px;
     margin-top: -80px;
   }
@@ -1016,12 +1021,24 @@
     grid-gap: 40px 30px;
   }
 }
+.filters-button{
+  z-index: 100;
+  position: fixed;
+  border: none;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
 .pagination__prev {
   display: none;
 }
 .list-sec {
-  &__items {
-  }
   &__item {
     display: flex;
     margin-bottom: 45px;
@@ -1057,6 +1074,7 @@
     line-height: 30px;
     color: $default;
     margin-bottom: 32px;
+    padding-right: 20px;
   }
   &__links svg {
     width: 50px;
@@ -1381,7 +1399,7 @@
     margin-bottom: 37px;
     @extend %rubik-400;
     font-size: 36px;
-    line-height: 26px;
+    line-height: 40px;
     color: #333333;
   }
   &__content-text {
@@ -1468,7 +1486,7 @@
     h4 {
       @extend %rubik-400;
       font-size: 36px;
-      line-height: 26px;
+      line-height: 40px;
       color: #333;
       margin-bottom: 30px;
     }
